@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+.dark .title p {
+  color: #CCCCCC !important;
+}
+.dark .form .button button {
+  color: #000 !important;
+  background: white !important;
+}
+.dark .form .button button:hover {
+  color: #CCCCCC !important;
+}
+.dark .go_back p,
+.dark .go_back span,
+.dark .go_back a {
+  color: white !important;
+}
+.dark .go_back a:hover {
+  text-decoration: underline #fff;
+}
+.dark .links a {
+  color: white !important;
+}
+
+.contact .contact-container {
+  padding-right: 70px;
+  padding-left: 85px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -35px;
+  padding-left: 200px;
+  margin-top: 80px;
+  padding-right: 165px;
+}
+.contact .contact-container .title h2 {
+  font-weight: 900;
+  font-size: 3rem;
+  font-family: Blorado, sans-serif;
+}
+.contact .contact-container .title p {
+  margin-top: -20px;
+  color: #545454;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 16px;
+  min-width: 255px;
+}
+.contact .contact-container .title p span {
+  position: relative;
+  border: none;
+  font-weight: 800;
+  background: transparent;
+  color: #111;
+}
+.contact .contact-container .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.contact .contact-container .form form .input-group input {
+  background: transparent;
+  padding: 25px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out;
+  height: 10px;
+  outline: none;
+  font-family: "Lato", sans-serif;
+  min-width: 468px;
+}
+.contact .contact-container .form form .input-group textarea {
+  background: transparent;
+  padding: 25px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out;
+  outline: none;
+  font-family: "Lato", sans-serif;
+  min-width: 468px;
+  resize: none;
+}
+.contact .contact-container .form form .input-group input::placeholder {
+  position: absolute;
+  top: 20px;
+}
+.contact .contact-container .form form .input-group input:focus,
+.contact .contact-container .form form .input-group textarea:focus {
+  background: #fff;
+}
+.contact .contact-container .form form .button button {
+  border: none;
+  background: #000;
+  color: white;
+  border-radius: 8px;
+  padding: 19px;
+  font-weight: 400;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.contact .contact-container .form form .button button:hover {
+  color: #495057;
+}
+.contact .contact-container .go_back {
+  display: flex;
+  align-items: center;
+  color: #545454;
+  height: 80px;
+  padding-left: 5px;
+  padding-bottom: 40px;
+}
+.contact .contact-container .go_back span {
+  margin-top: 8px;
+  animation-name: forward;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.contact .contact-container .go_back:hover {
+  cursor: pointer;
+  text-decoration: underline #001f3f;
+}
+.contact .contact-container a {
+  text-decoration: none;
+  color: #111;
+}
+.contact .contact-container .links {
+  margin-left: -35px;
+}
+.contact .contact-container .links ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+.contact .contact-container .links ul a {
+  color: #495057;
+}
+.contact .contact-container .links ul a:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 870px) {
+  .contact .contact-container {
+    padding-left: 30px;
+  }
+  .contact .contact-container .links {
+    position: fixed;
+    bottom: 0;
+    background: #ebe6df;
+    width: 103%;
+    margin-left: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .contact .contact-container .links ul {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-around;
+    padding-right: 45px;
+  }
+
+  .dark .contact-container .links {
+    background: #020a13;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+}
+@media (max-width: 610px) {
+  .contact .contact-container .form form .input-group input {
+    min-width: fit-content;
+    width: 125%;
+  }
+
+  .contact .contact-container .form form .input-group textarea {
+    min-width: fit-content;
+    width: 125%;
+  }
+}
