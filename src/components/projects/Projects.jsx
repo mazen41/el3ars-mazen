@@ -12,6 +12,8 @@ const projectsData = [
         name: 'Social Media App',
         smallDescription: 'Connect, share, Network.',
         description: 'Designed and developed a social media platform enabling user connection and content engagement. Features include user authentication, post creation (text, images), content discovery through personalized feeds, commenting and discussion functionalities, Profile settings post delete and edit',
+        explanation: 'This is the frontend part only you could the code of the backend part in github at the link below :)',
+        
         liveLink: 'https://social-media-app-tau-jet.vercel.app/',
         gitFrontendLink: 'https://github.com/mazen41/social-media-app.git',
         gitBackendLink: 'https://github.com/mazen41/social-media-app-api.git',
@@ -23,6 +25,7 @@ const projectsData = [
         name: 'E-commerce Online Store',
         smallDescription: 'Sip, savor, repeat.',
         description: 'Developed an e-commerce platform for a coffee online store. The platform facilitates online ordering, secure payment processing, and customer account management for a seamless coffee-buying experience.',
+        explanation: 'This is the frontend part only you could the code of the backend part in github at the link below :)',
         liveLink: '',
         gitFrontendLink: 'https://github.com/mazen41/e-commerce-online-store.git',
         gitBackendLink: 'https://github.com/mazen41/online-store-api.git',
@@ -34,16 +37,21 @@ const projectsData = [
         name: 'Animation Landing Page',
         smallDescription: 'The Animation',
         description: 'Designed and developed an interactive landing page utilizing animation to engage and inform users.        ',
+        explanation: 'This is the frontend part only you could the code of the backend part in github at the link below :)',
+        explanation: 'This is the frontend part only you could the code of the backend part in github at the link below :)',
+        
         liveLink: 'https://animation-landing-page-theta.vercel.app',
         github: 'https://github.com/mazen41/Animation-Landing-Page.git',
         technology: ['HTML', 'SCSS', 'Javascript'],
     },
     {
-        id: 4,
+        id: 5,
         image: './Dashboard.png',
         name: 'Shopify Simple Dashboard',
         smallDescription: 'The Animation',
         description: '',
+        explanation: 'This is the frontend part only you could the code of the backend part in github at the link below :)',
+        
         liveLink: 'https://dashboard-iota-eosin.vercel.app/',
         github: 'https://github.com/mazen41/Dashboard.git',
         technology: ['React', 'SCSS'],
@@ -122,6 +130,7 @@ const Projects = () => {
                         <div className="links">
                             <div className="web">
                                 <h2>Website</h2>
+                                <p>{selectedProject.explanation}</p>
                                 <a href={selectedProject ? (selectedProject.liveLink ? selectedProject.liveLink : null) : null}>{selectedProject ? (selectedProject.liveLink ? selectedProject.liveLink : null) : null}</a>
                             </div>
                             <div className="git">
