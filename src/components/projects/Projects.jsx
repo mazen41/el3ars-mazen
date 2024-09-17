@@ -130,7 +130,12 @@ const Projects = () => {
                         <div className="links">
                             <div className="web">
                                 <h2>Website</h2>
-                                <p></p>
+                                <p>
+                                {
+                                    selectedProject && (
+                                        selectedProject.explanation ? selectedProject.explanation : null
+                                    )
+                                }</p>
                                 <a href={selectedProject ? (selectedProject.liveLink ? selectedProject.liveLink : null) : null}>{selectedProject ? (selectedProject.liveLink ? selectedProject.liveLink : null) : null}</a>
                             </div>
                             <div className="git">
