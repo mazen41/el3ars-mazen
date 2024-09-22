@@ -14,9 +14,9 @@ import { useTheme } from '../../Them';
 
 const Contact = () => {
   const { theme, toggleTheme } = useTheme();
-  const [name, setName] = useState()
-  const [email, setEmail] = useState()
-  const [message, setMessage] = useState()
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
   const handleSubmit = (e) => {
     e.preventDefault();
     setName("");
