@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../navbar/Navbar";
 import EastIcon from "@mui/icons-material/East";
@@ -43,7 +44,7 @@ const Contact = () => {
           <p>Get in touch or send email directly to <span>mazen.hossn.121@gmail.com</span></p>
         </div>
         <div className="form">
-          <form onSubmit={() => handleSubmit(e)}>
+          <form onSubmit={handleSubmit}>
             <div className="input-group">
               <input type="text" name="name" placeholder="Name" value={name} onChange={(e) => setName(e.value)}/>
             </div>
