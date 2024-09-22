@@ -12,7 +12,7 @@ const projectsData = [
         name: 'Social Media App',
         smallDescription: 'Connect, share, Network.',
         description: 'Designed and developed a social media platform enabling user connection and content engagement. Features include user authentication, post creation (text, images), content discovery through personalized feeds, commenting and discussion functionalities, Profile settings post delete and edit',
-        explanation: 'This is the frontend part only you could the code of the backend part in github at the link below :)',
+        explanation: 'This is the frontend part only you could see the code of the backend part in github at the link below :)',
         
         liveLink: 'https://social-media-app-tau-jet.vercel.app/',
         gitFrontendLink: 'https://github.com/mazen41/social-media-app.git',
@@ -25,8 +25,8 @@ const projectsData = [
         name: 'E-commerce Online Store',
         smallDescription: 'Sip, savor, repeat.',
         description: 'Developed an e-commerce platform for a coffee online store. The platform facilitates online ordering, secure payment processing, and customer account management for a seamless coffee-buying experience.',
-        explanation: 'This is the frontend part only you could the code of the backend part in github at the link below :)',
-        liveLink: '',
+        explanation: 'This is the frontend part only you could see the code of the backend part in github at the link below :)',
+        liveLink: 'https://e-commerce-online-store-kohl.vercel.app/',
         gitFrontendLink: 'https://github.com/mazen41/e-commerce-online-store.git',
         gitBackendLink: 'https://github.com/mazen41/online-store-api.git',
         technology: ['React', 'Typescript'],
@@ -36,10 +36,7 @@ const projectsData = [
         image: './Landing_Page.png',
         name: 'Animation Landing Page',
         smallDescription: 'The Animation',
-        description: 'Designed and developed an interactive landing page utilizing animation to engage and inform users.        ',
-        explanation: 'This is the frontend part only you could the code of the backend part in github at the link below :)',
-        explanation: 'This is the frontend part only you could the code of the backend part in github at the link below :)',
-        
+        description: 'Designed and developed an interactive landing page utilizing animation to engage and inform users.        ',        
         liveLink: 'https://animation-landing-page-theta.vercel.app',
         github: 'https://github.com/mazen41/Animation-Landing-Page.git',
         technology: ['HTML', 'SCSS', 'Javascript'],
@@ -49,9 +46,7 @@ const projectsData = [
         image: './Dashboard.png',
         name: 'Shopify Simple Dashboard',
         smallDescription: 'The Animation',
-        description: '',
-        explanation: 'This is the frontend part only you could the code of the backend part in github at the link below :)',
-        
+        description: '',        
         liveLink: 'https://dashboard-iota-eosin.vercel.app/',
         github: 'https://github.com/mazen41/Dashboard.git',
         technology: ['React', 'SCSS'],
@@ -145,7 +140,7 @@ const Projects = () => {
                                     <a href="">https://twitter.com/mazen_hossny</a>
                                 </div>
                                 <div className="backend">
-                                    <p>backedn</p>
+                                    <p>backend</p>
                                     <a href="">https://twitter.com/mazen_hossny</a>
                                 </div>
                             </div>
