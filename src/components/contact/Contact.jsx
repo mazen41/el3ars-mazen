@@ -22,13 +22,12 @@ const Contact = () => {
     setName("");
     setEmail("");
     setMessage("");
-    localStorage.setItem("client", (
-      {
-        "name" : name,
-        "email" : email,
-        "message" : message,
-      }
-    ))
+    const clinet = {
+      "name": name,
+      "email": email,
+      "message": message,
+    }
+    localStorage.setItem("client", clinet)
   }
   return (
     <motion.div
@@ -48,10 +47,10 @@ const Contact = () => {
         <div className="form">
           <form onSubmit={handleSubmit}>
             <div className="input-group">
-              <input type="text" name="name" placeholder="Name" value={name} onChange={(e) => setName(e.value)}/>
+              <input type="text" name="name" placeholder="Name" value={name} onChange={(e) => setName(e.value)} />
             </div>
             <div className="input-group">
-              <input type="email" name="email" value={email} onChange={(e) => setEmail(e.value)} placeholder="Email"/>
+              <input type="email" name="email" value={email} onChange={(e) => setEmail(e.value)} placeholder="Email" />
             </div>
             <div className="input-group">
               <textarea rows="5" placeholder="Message" value={message} onChange={(e) => setMessage(e.value)}>
@@ -62,24 +61,24 @@ const Contact = () => {
               <button>Send Message</button>
             </div>
           </form>
-        </div>  
+        </div>
         <div className="go_back">
-            <Link to={"/"}>
-              <p>Go Back</p>
-            </Link>
-            <span>
-              <EastIcon />
-            </span>
-          </div>
-          <div className="links">
-            <ul>
-              <a href="https://twitter.com/mazen_hossny"><XIcon /></a>
-              <a href="https://www.facebook.com/mazen.hossny.7"><FacebookOutlinedIcon /></a>
-              <a href="https://www.linkedin.com/in/mazen-hossny-54a8a02b7/"><LinkedInIcon /></a>
-              <a href="https://www.instagram.com/hossny_mazen/"><InstagramIcon /></a>
-              <a href=""><GitHubIcon /></a>
-            </ul>
-          </div>
+          <Link to={"/"}>
+            <p>Go Back</p>
+          </Link>
+          <span>
+            <EastIcon />
+          </span>
+        </div>
+        <div className="links">
+          <ul>
+            <a href="https://twitter.com/mazen_hossny"><XIcon /></a>
+            <a href="https://www.facebook.com/mazen.hossny.7"><FacebookOutlinedIcon /></a>
+            <a href="https://www.linkedin.com/in/mazen-hossny-54a8a02b7/"><LinkedInIcon /></a>
+            <a href="https://www.instagram.com/hossny_mazen/"><InstagramIcon /></a>
+            <a href=""><GitHubIcon /></a>
+          </ul>
+        </div>
       </div>
     </motion.div>
   );
