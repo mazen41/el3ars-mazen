@@ -22,11 +22,13 @@ const Contact = () => {
     setName("");
     setEmail("");
     setMessage("");
-    localStorage.setItem("client", {
-      "name" : name,
-      "email" : email,
-      "message" : message,
-    })
+    localStorage.setItem("client", (
+      {
+        "name" : name,
+        "email" : email,
+        "message" : message,
+      }
+    ))
   }
   return (
     <motion.div
