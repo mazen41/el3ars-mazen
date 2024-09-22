@@ -23,9 +23,9 @@ const Contact = () => {
     setEmail("");
     setMessage("");
     const clinet = {
-      "name": name,
-      "email": email,
-      "message": message,
+      name: name,
+      email: email,
+      message: message,
     }
     localStorage.setItem("client", JSON.stringify(clinet))
   }
