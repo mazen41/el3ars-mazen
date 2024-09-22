@@ -103,7 +103,7 @@ const Contact = () => {
   const { theme, toggleTheme } = useTheme();
   const [name, setName] = useState("");  // Initialized with empty string
   const [email, setEmail] = useState("");  // Initialized with empty string
-  const [message, setMessage] = useState("");  // Initialized with empty string
+  const [message, setMessage] = useState("");   // Initialized with empty string
 
   const handleSubmit = (e) => {
     e.preventDefault();
