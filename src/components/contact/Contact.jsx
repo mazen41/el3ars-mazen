@@ -43,7 +43,7 @@ const Contact = () => {
           <p>Get in touch or send email directly to <span>mazen.hossn.121@gmail.com</span></p>
         </div>
         <div className="form">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={() => handleSubmit(e)}>
             <div className="input-group">
               <input type="text" name="name" placeholder="Name" value={name} onChange={(e) => setName(e.value)}/>
             </div>
