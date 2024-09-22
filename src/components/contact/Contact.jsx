@@ -27,7 +27,7 @@ const Contact = () => {
       "email": email,
       "message": message,
     }
-    localStorage.setItem("client", clinet)
+    localStorage.setItem("client", JSON.stringify(clinet))
   }
   return (
     <motion.div
