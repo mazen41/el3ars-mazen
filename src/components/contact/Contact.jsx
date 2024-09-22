@@ -47,13 +47,13 @@ const Contact = () => {
         <div className="form">
           <form onSubmit={handleSubmit}>
             <div className="input-group">
-              <input type="text" name="name" placeholder="Name" value={name} onChange={(e) => setName(e.value)} />
+              <input type="text" name="name" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
             </div>
             <div className="input-group">
-              <input type="email" name="email" value={email} onChange={(e) => setEmail(e.value)} placeholder="Email" />
+              <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" />
             </div>
             <div className="input-group">
-              <textarea rows="5" placeholder="Message" value={message} onChange={(e) => setMessage(e.value)}>
+              <textarea rows="5" placeholder="Message" value={message} onChange={(e) => setMessage(e.target.value)}>
 
               </textarea>
             </div>
