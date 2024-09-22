@@ -13,7 +13,20 @@ import { useTheme } from '../../Them';
 
 const Contact = () => {
   const { theme, toggleTheme } = useTheme();
-
+  const [name, setName] = useState()
+  const [email, setEmail] = useState()
+  const [message, setMessage] = useState()
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setName("");
+    setEmail("");
+    setMessage("");
+    localStorage.setItem("client", {
+      "name" : name,
+      "email" : email,
+      "message" : message,
+    })
+  }
   return (
     <motion.div
       className={`contact ${theme}`}
@@ -32,13 +45,13 @@ const Contact = () => {
         <div className="form">
           <form>
             <div className="input-group">
-              <input type="text" name="name" placeholder="Name"/>
+              <input type="text" name="name" placeholder="Name" value={name} onChange={(e) => setName(e.value)}/>
             </div>
             <div className="input-group">
-              <input type="email" name="email" placeholder="Email"/>
+              <input type="email" name="email" value={email} onChange={(e) => setEmail(e.value)} placeholder="Email"/>
             </div>
             <div className="input-group">
-              <textarea rows="5" placeholder="Message">
+              <textarea rows="5" placeholder="Message" value={message} onChange={(e) => setMessage(e.value)}>
 
               </textarea>
             </div>
